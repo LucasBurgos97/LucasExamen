@@ -2,25 +2,25 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-image: url('https://media.tycsports.com/files/2022/12/19/517634/lionel-messi_1440x810_wmk.webp?v=1'); /* Imagen de fondo para todo el cuerpo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-attachment: fixed; /* Hace que la imagen de fondo sea fija al hacer scroll */
-}
-
-header {
-    background-color: rgba(51, 51, 51, 0.8); /* Fondo semi-transparente */
+    background-image: url('https://media.tycsports.com/files/2022/12/19/517634/lionel-messi_1440x810_wmk.webp?v=1');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  header {
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     text-align: center;
     padding: 20px 0;
     position: relative;
-}
-
-header::before {
+  }
+  
+  header::before {
     content: "";
-    background-image: url(''); /* Imagen del logo */
+    background-image: url('');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -28,45 +28,85 @@ header::before {
     top: 10px;
     width: 50px;
     height: 50px;
-}
-
-main {
+  }
+  
+  main {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-section {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  }
+  
+  section {
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-h3 {
-    color: #666;
-}
-
-img {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  h1, h2 {
+    color: gold;
+  }
+  
+  h3 {
+    color: lightgray;
+  }
+  
+  p, ul, li {
+    color: white;
+  }
+  
+  a {
+    color: lightblue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  img {
     display: block;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-}
+  }
+  
+  .trophy-icon {
+    max-width: 28px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .premios-icon {
+    max-width: 28px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
 
-footer {
-    background-color: rgba(51, 51, 51, 0.8); /* Fondo semi-transparente */
+  .cancha-icon {
+    max-width: 28px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .pelota-icon {
+    max-width: 28px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  footer {
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-}
+  }
